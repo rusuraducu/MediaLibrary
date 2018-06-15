@@ -6,25 +6,16 @@ public class Test {
 
         Library library = new Library();
 
-        // Display all the top20 most accessed media entities
-
         System.out.println("\nTop 20 \n");
         library.top20();
 
 
-       // Archived
-
         System.out.println("\nArchive \n");
         library.archive();
-
-
-        // Display all the media entities that are of type video
 
         System.out.println("\nVideo \n");
         library.search("Video");
 
-
-         // Update noOfDownloads field for one MediaEntity
         System.out.println("\nDownload \n");
         library.download("Logistica Transporturilor");
 
@@ -35,15 +26,14 @@ public class Test {
     }
 
     /*
-    * Contains 15 books, 5 videos and 7 Mp3 (included in the relevant list – top20 or archived
-    *– according to the noOfDownloads field)
+    * Contains 15 books, 5 videos and 7 Mp3...
      */
 
     public static List<MediaEntity> getEntityList() {
 
         List<MediaEntity> mediaEntityList = new ArrayList<>();
         mediaEntityList.add(new Book("Management Financiar",19, "A. Nestian", "Al. I. Cuza"));
-        mediaEntityList.add(new Book("Fiante",20, "A. Popa", "Al. I. Cuza"));
+        mediaEntityList.add(new Book("Finante",20, "A. Popa", "Al. I. Cuza"));
         mediaEntityList.add(new Book("Management",21, "N. Andrei", "Al. I. Cuza"));
         mediaEntityList.add(new Book("Marketing",22, "A.  Monoranu", "Al. I. Cuza"));
         mediaEntityList.add(new Book("Logistica", 18, "A. Roman", "Al. I. Cuza"));
@@ -63,7 +53,7 @@ public class Test {
         mediaEntityList.add(new Mp3("Melodie04", 5,"Interpret4", "Album"));
         mediaEntityList.add(new Mp3("Melodie05", 14,"Interpret0", "Album"));
         mediaEntityList.add(new Mp3("Melodie06", 13,"Interpret1", "Album"));
-        mediaEntityList.add(new Mp3("Melodie06", 12,"Interpret", "Album"));
+        mediaEntityList.add(new Mp3("Melodie07", 12,"Interpret", "Album"));
         return mediaEntityList;
     }
 
